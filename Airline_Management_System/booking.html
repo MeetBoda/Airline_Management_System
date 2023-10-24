@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Ticket</title>
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Template Main CSS File -->
+    <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+    <style>
+        input[type=text], input[type=email]{
+        width: 600px;
+        border: 1px solid black;
+        }
+        select{
+        width: 600px;
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 38px;
+        }
+        form {
+            margin-left: 40px;;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Enter your Details</h1> 
+        <form action='book.php' method="post">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Enter Flight No </label>
+                <input type="text" class="form-control" id="exampleInputPassword1" name="flight_no" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Enter Your Name</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" name="name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Enter Your Contact No </label>
+                <input type="text" class="form-control" id="exampleInputPassword1" name="contact_no">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Enter Your Address </label>
+                <input type="text" class="form-control" id="exampleInputPassword1" name="address">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Enter Your Email Address</label>
+                <input type="email" class="form-control" id="exampleInputPassword1" name="email_id">
+            </div>
+            Payment Mode: <br>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="pay" id="exampleRadios2" value="Online Banking">
+                <label class="form-check-label" for="exampleRadios2">
+                    Online Banking
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="pay" id="exampleRadios2" value="Cash">
+                <label class="form-check-label" for="exampleRadios2">
+                    Cash
+                </label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary" name="book_ticket">Book</button>
+        </form>
+    <!-- <form action="book.php" method="POST">
+        Enter Flight No: <input type="text" name="flight_no">
+        <br><br>
+        Enter Your Name: <input type="text" name="name">
+        <br><br>
+        Enter Your Contact No: <input type="text" name="contact_no">
+        <br><br>
+        Enter Your Address: <input type="text" name="address">
+        <br><br>
+        Enter Your Email Address: <input type="email" name="email_id">
+        <br><br>
+        Payment Mode: <br>
+        <input type="radio" name="pay" value="Online Banking" required>  Online Banking  <br>
+        <input type="radio" name="pay" value="Cash"> Cash <br><br>
+        <input type="submit" name="book_ticket" value="Go">
+    </form> -->
+</body>
+</html>

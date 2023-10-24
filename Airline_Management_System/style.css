@@ -1,0 +1,11 @@
+.firstpage{
+    text-align: center;
+    width:20%;  
+    border: 3px dotted red;
+    margin: auto;
+    margin-top: 20%;
+}
+.main{
+    /* background-color:; */
+    padding-top:1%;
+}
